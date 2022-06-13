@@ -64,12 +64,12 @@
         opacity: 1;
     }
     50% {
-        opacity: 0;
-    }
-    100% {
         opacity: 1;
     }
-    150% {
+    100% {
+        opacity: 0;
+    }
+    125% {
         opacity: 1;
     }
 }
@@ -83,17 +83,17 @@
     transform-origin: center;
 }
 
-@keyframes expression_open1 {
+@keyframes expression_smile1 {
     0% {
         opacity: 0;
     }
     50% {
-        opacity: 1;
-    }
-    100% {
         opacity: 0;
     }
-    150% {
+    100% {
+        opacity: 1;
+    }
+    125% {
         opacity: 0;
     }
 }
