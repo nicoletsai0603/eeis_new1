@@ -18,11 +18,12 @@
 .containanimate {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .left_animate {
-    margin-top: -9%;
-    margin-left: -10%;
+    margin-top: -7%;
+    margin-left: -10vw;
 }
 
 .magnifier {
@@ -113,7 +114,7 @@
 
 .bubble {
     position: relative;
-    margin-right: -35px;
+    margin-right: -5vw;
 }
 
 @keyframes pulse {
@@ -264,7 +265,7 @@ header.eems.small {
 }
 
 .main_bg {
-    padding: 50px 0;
+    padding: 20px 0 50px;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#70dafd+0,5bf4ff+24,f7fdff+100 */
     background: rgb(112, 218, 253);
     /* Old browsers */
@@ -292,6 +293,8 @@ body .main-slideshow.home2_slideshow .home-slideshow-inner.col-sm-9 {
 body .main-slideshow.home2_slideshow .home-rightbanner-wrapper.col-sm-3 {
     width: 40%;
     height: 100%;
+    position: absolute;
+    right: 0;
 }
 
 .news {
@@ -299,11 +302,17 @@ body .main-slideshow.home2_slideshow .home-rightbanner-wrapper.col-sm-3 {
     margin: 30px 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
     .container {
-        width: 1300px;
+        width: 1500px;
         margin: auto;
         padding: 0;
+    }
+}
+
+@media (max-width: 1500px) {
+    .container {
+        width: 100%;
     }
 }
 
@@ -545,6 +554,7 @@ a.animation_btn.global:focus .black {
 .main-slideshow .row {
     display: flex;
     align-items: stretch;
+    position: relative;
 }
 
 .carousel-inner img {
@@ -564,7 +574,7 @@ a.animation_btn.global:focus .black {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: calc(100% - 80px);
 }
 
 .newbtn {
@@ -630,4 +640,8 @@ a.animation_btn.global:focus .black {
 
 .banner_slider {
     margin: 30px auto 10px;
+}
+
+.footer_link_wrapper .row {
+    margin-left: 0;
 }
