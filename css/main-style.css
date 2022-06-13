@@ -7,9 +7,33 @@
 
 .index_top_bg {
     width: 100%;
-    background: url(../img/index_top_bg.jpg) top center no-repeat;
+    background: url(../img/bg1_1-02.svg) top center no-repeat;
     background-size: cover;
     min-height: 748px;
+}
+
+.star {
+    width: 100%;
+    position: absolute;
+    height: 748px;
+    transform: scale(0.7);
+    background: url(../img/star.svg) center no-repeat;
+    background-size: contain;
+    animation: star1 2.5s infinite linear;
+    transform-origin: center;
+    z-index: 0;
+}
+
+@keyframes star1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 
@@ -19,6 +43,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 .left_animate {
