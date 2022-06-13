@@ -252,6 +252,7 @@ header.eems.small {
     background: #fff url(../img/header_scorll-01.svg) top no-repeat;
     position: fixed;
     top: 0;
+    background-size: cover;
 }
 
 .carousel-inner>.item>a>img,
